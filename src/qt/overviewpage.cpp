@@ -158,13 +158,13 @@ void OverviewPage::unlockWallet()
         dlg.setModel(model);
         if(dlg.exec() == QDialog::Accepted)
         {
-            ui->unlockWalletButton->setText(QString("Lock Wallet"));
+            ui->unlockWalletButton->setText(QString("LOCK WALLET"));
         }
     }
     else
     {
         model->setWalletLocked(true);
-        ui->unlockWalletButton->setText(QString("Unlock Wallet"));
+        ui->unlockWalletButton->setText(QString("UNLOCK WALLET"));
     }
 }
 

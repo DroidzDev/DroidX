@@ -82,8 +82,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     notificator(0),
     rpcConsole(0)
 {
-    resize(840, 550);
-    setWindowTitle(tr("Droidz") + tr("Wallet"));
+    resize(950, 550);
+    setWindowTitle(tr("DroidX") + tr("Wallet"));
 
 
 #ifndef Q_OS_MAC
@@ -93,6 +93,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
 #endif
+
+	setWindowOpacity(qreal(95)/100);
+
 	QApplication::setStyle(QStyleFactory::create("Fusion"));
 
     // Accept D&D of URIs
@@ -112,8 +115,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 //    QFile style(":/styles/styles");
 //    style.open(QFile::ReadOnly);
 //    qApp->setStyleSheet(QString::fromUtf8(style.readAll()));
-//    setStyleSheet("QMainWindow { background-image:url(:images/bkg);border:none;font-family:'Open Sans,sans-serif'; } #frame { } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background:rgb(210,192,123);border:none; } #toolbar3 { border:none;width:1px; background-color: rgb(56,56,56); } #toolbar2 { border:none;width:28px; background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195),stop: 2 rgb(59,62,65)); } #toolbar { border:none;height:100%;padding-top:20px; background: rgb(210,192,123); text-align: left; color: white;min-width:150px;max-width:150px;} QToolBar QToolButton:hover {background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195),stop: 2 rgb(59,62,65));} QToolBar QToolButton { font-family:Century Gothic;padding-left:20px;padding-right:150px;padding-top:10px;padding-bottom:10px; width:100%; color: white; text-align: left; background-color: rgb(210,192,123) } #labelMiningIcon { padding-left:5px;font-family:Century Gothic;width:100%;font-size:10px;text-align:center;color:white; } QMenu { background: rgb(210,192,123); color:white; padding-bottom:10px; } QMenu::item { color:white; background-color: transparent; } QMenu::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195)); } QMenuBar { background: rgb(210,192,123); color:white; } QMenuBar::item { font-size:12px;padding-bottom:8px;padding-top:8px;padding-left:15px;padding-right:15px;color:white; background-color: transparent; } QMenuBar::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195)); }");
-    qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg);border:none;font-family:'Open Sans,sans-serif'; } #frame { } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background:rgb(16,19,65);border:none; } #toolbar3 { border:none;width:1px; background-color: rgb(56,56,56); } #toolbar2 { border:none;width:28px; background-color:rgb(56,56,56); } #toolbar { border:none;height:100%;padding-top:20px; background: rgb(16,19,65); text-align: left; color: white;min-width:150px;max-width:150px;} QToolBar QToolButton:hover {background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(16,19,65), stop: 1 rgb(216,252,251),stop: 2 rgb(59,62,65));} QToolBar QToolButton { font-family:Century Gothic;padding-left:20px;padding-right:150px;padding-top:10px;padding-bottom:10px; width:100%; color: white; text-align: left; background-color: rgb(16,19,65) } #labelMiningIcon { padding-left:5px;font-family:Century Gothic;width:100%;font-size:10px;text-align:center;color:white; } QMenu { background: rgb(16,19,65); color:white; padding-bottom:10px; } QMenu::item { color:white; background-color: transparent; } QMenu::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(16,19,65), stop: 1 rgb(149,204,244)); } QMenuBar { background: rgb(16,19,65); color:white; } QMenuBar::item { font-size:12px;padding-bottom:8px;padding-top:8px;padding-left:15px;padding-right:15px;color:white; background-color: transparent; } QMenuBar::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(16,19,65), stop: 1 rgb(149,204,244)); }");
+//    setStyleSheet("QMainWindow { background-image:url(:images/bkg);border:none;font-family:'Open Sans,sans-serif'; } #frame { } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background:rgb(210,192,123);border:none; } #toolbar3 { border:none;width:1px; background-color: rgb(54,41,117); } #toolbar2 { border:none;width:28px; background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195),stop: 2 rgb(59,62,65)); } #toolbar { border:none;height:100%;padding-top:20px; background: rgb(210,192,123); text-align: left; color: white;min-width:150px;max-width:150px;} QToolBar QToolButton:hover {background-color:qlineargradient(x1: 0, y1: 0, x2: 2, y2: 2,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195),stop: 2 rgb(59,62,65));} QToolBar QToolButton { font-family:Century Gothic;padding-left:20px;padding-right:150px;padding-top:10px;padding-bottom:10px; width:100%; color: white; text-align: left; background-color: rgb(210,192,123) } #labelMiningIcon { padding-left:5px;font-family:Century Gothic;width:100%;font-size:10px;text-align:center;color:white; } QMenu { background: rgb(210,192,123); color:white; padding-bottom:10px; } QMenu::item { color:white; background-color: transparent; } QMenu::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195)); } QMenuBar { background: rgb(210,192,123); color:white; } QMenuBar::item { font-size:12px;padding-bottom:8px;padding-top:8px;padding-left:15px;padding-right:15px;color:white; background-color: transparent; } QMenuBar::item:selected { background-color:qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,stop: 0 rgb(210,192,123), stop: 1 rgb(227,213,195)); }");
+    qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg); border:none; font-family:'Calibri,sans-serif'; background: rgb(40,40,55); } #frame { } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background: rgb(40,40,55);border:none; } #toolbar3 { border: none; width:1px; background-color: rgb(54,41,117); } #toolbar2 { border: none; width:28px; padding-right:10px; background-color: rgb(40,40,55); } #toolbar { border:none;height:100%;padding-top:20px; padding-left:13px; background: rgb(40,40,55); text-align: left; color: white; min-width:220px; max-width:220px;} QToolBar QToolButton:hover {background-color: rgb(68,56,127);} QToolBar QToolButton { font-family:Century Gothic;padding-left:20px;padding-right:150px;padding-top:10px;padding-bottom:10px; width:100%; color: white; text-align: left; background-color: rgb(40,40,55) } #labelMiningIcon { padding-left:5px;font-family:Century Gothic;width:100%;font-size:10px;text-align:center;color:white; } QMenu { background: rgb(40,40,55); color:white; padding-bottom:10px; } QMenu::item { color:white; background-color: transparent; } QMenu::item:selected { background-color: rgb(55,55,70); } QMenuBar { background: rgb(40,40,55); color:white; } QMenuBar::item { font-size:12px;padding-bottom:8px;padding-top:8px;padding-left:15px;padding-right:15px;color:white; background-color: transparent; } QMenuBar::item:selected { background-color: rgb(55,55,70); }");
 
 
 //#ifdef Q_OS_MAC
@@ -122,7 +125,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     // Create tabs
     overviewPage = new OverviewPage();
     statisticsPage = new StatisticsPage(this);
-
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
     transactionView = new TransactionView(this);
@@ -175,14 +177,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     toolbar2->setOrientation(Qt::Vertical);
     toolbar2->setMovable( false );
     toolbar2->setObjectName("toolbar2");
-    toolbar2->setFixedWidth(28);
-    toolbar2->setIconSize(QSize(28,28));
+    toolbar2->setIconSize(QSize(32,32));
     toolbar2->addWidget(labelEncryptionIcon);
     toolbar2->addWidget(labelStakingIcon);
     toolbar2->addWidget(labelConnectionsIcon);
     toolbar2->addWidget(labelBlocksIcon);
-    toolbar2->setStyleSheet("#toolbar2 QToolButton { border:none;padding:0px;margin:0px;height:20px;width:28px;margin-top:36px; }");
-//    toolbar2->setStyleSheet(QString::fromUtf8(style.readAll()));
 	
 	addToolBarBreak(Qt::TopToolBarArea);
     QToolBar *toolbar3 = addToolBar(tr("Green bar"));
@@ -225,36 +224,36 @@ void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
 
-    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Overview"), this);
+    overviewAction = new QAction(QIcon(":/icons/overview"), tr("&OVERVIEW"), this);
     overviewAction->setToolTip(tr("Show general overview of wallet"));
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    statisticsAction = new QAction(QIcon(":/icons/statistics"), tr("&Statistics"), this);
+    statisticsAction = new QAction(QIcon(":/icons/statistics"), tr("&STATISTICS"), this);
     statisticsAction->setToolTip(tr("View statistics"));
     statisticsAction->setCheckable(true);
     tabGroup->addAction(statisticsAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a droidz address"));
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&SEND COINS"), this);
+    sendCoinsAction->setToolTip(tr("Send coins to a DroidX address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive coins"), this);
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&RECEIVE COINS"), this);
     receiveCoinsAction->setToolTip(tr("Show the list of addresses for receiving payments"));
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
-    historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
+    historyAction = new QAction(QIcon(":/icons/history"), tr("&TRANSACTIONS"), this);
     historyAction->setToolTip(tr("Browse transaction history"));
     historyAction->setCheckable(true);
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
     tabGroup->addAction(historyAction);
 
-    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Address Book"), this);
+    addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&ADDRESS BOOK"), this);
     addressBookAction->setToolTip(tr("Edit the list of stored addresses and labels"));
     addressBookAction->setCheckable(true);
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
@@ -276,14 +275,14 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About droidz"), this);
-    aboutAction->setToolTip(tr("Show information about droidz"));
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About DroidX"), this);
+    aboutAction->setToolTip(tr("Show information about DroidX"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for droidz"));
+    optionsAction->setToolTip(tr("Modify configuration options for DroidX"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -340,7 +339,6 @@ void BitcoinGUI::createMenuBar()
     file->addAction(exportAction);
     file->addAction(signMessageAction);
     file->addAction(verifyMessageAction);
-    file->addSeparator();
     file->addAction(quitAction);
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
@@ -348,12 +346,10 @@ void BitcoinGUI::createMenuBar()
     settings->addAction(changePassphraseAction);
 //    settings->addAction(unlockWalletAction);
 //    settings->addAction(lockWalletAction);
-    settings->addSeparator();
     settings->addAction(optionsAction);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
-    help->addSeparator();
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
 }
@@ -399,7 +395,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if(trayIcon)
             {
-                trayIcon->setToolTip(tr("droidz client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("DroidX client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -460,7 +456,7 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("droidz client"));
+    trayIcon->setToolTip(tr("DroidX client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -474,17 +470,13 @@ void BitcoinGUI::createTrayIcon()
 
     // Configuration of the tray icon (or dock icon) icon menu
     trayIconMenu->addAction(toggleHideAction);
-    trayIconMenu->addSeparator();
     trayIconMenu->addAction(sendCoinsAction);
     trayIconMenu->addAction(receiveCoinsAction);
-    trayIconMenu->addSeparator();
     trayIconMenu->addAction(signMessageAction);
     trayIconMenu->addAction(verifyMessageAction);
-    trayIconMenu->addSeparator();
     trayIconMenu->addAction(optionsAction);
     trayIconMenu->addAction(openRPCConsoleAction);
 #ifndef Q_OS_MAC // This is built-in on Mac
-    trayIconMenu->addSeparator();
     trayIconMenu->addAction(quitAction);
 #endif
 
@@ -530,7 +522,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(28,54));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to droidz network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to DroidX network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -831,7 +823,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid droidz address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid DroidX address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -846,7 +838,7 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid droidz address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid DroidX address or malformed URI parameters."));
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

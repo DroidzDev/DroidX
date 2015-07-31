@@ -2,13 +2,13 @@
 # QuBit (in order: luffa, cubehash, shavite, simd, echo)
 
 TEMPLATE = app
-TARGET = droidz-qt
-VERSION = 1.2.0.0
+TARGET = droidx-qt
+VERSION = 2.0.0.0
 INCLUDEPATH += src src/json \
     src/qt 
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
-CONFIG += thread static
+CONFIG += thread
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 lessThan(QT_MAJOR_VERSION, 5): CONFIG += static
 QMAKE_CXXFLAGS = -fpermissive
@@ -37,12 +37,14 @@ win32 {
     BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
     BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
     BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1l/include
-    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1l
-    MINIUPNPC_INCLUDE_PATH=C:/deps/
+    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
+    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
+    MINIUPNPC_INCLUDE_PATH=C:/deps
+    LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.16
+    LIBPNG_LIB_PATH=C:/deps/libpng-1.6.16/.libs
     MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-    QRENCODE_INCLUDE_PATH=C:/deps/qrcode-win32-3.1.1/include
-    QRENCODE_LIB_PATH=C:/deps/qrcode-win32-3.1.1/dll
+    QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+    QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 }
 
 # for boost 1.37, add -mt to the boost libraries
@@ -84,23 +86,18 @@ win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat,--large-address-aware -st
 win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 lessThan(QT_MAJOR_VERSION, 5): win32: QMAKE_LFLAGS *= -static
 
-USE_QRCODE=1
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
 contains(USE_QRCODE, 1) {
     message(Building with QRCode support)
     DEFINES += USE_QRCODE
-    macx:LIBS += -lqrencode
-    win32:INCLUDEPATH +=$$QRENCODE_INCLUDE_PATH
-    win32:LIBS += $$join(QRENCODE_LIB_PATH,,-L) -lqrcodelib
-    !win32:!macx:LIBS += -lqrencode
+    LIBS += -lqrencode
 }
 
-# use: qmake "USE_UPNP=1" ( enabled by default; default)
+# use: qmake "USE_UPNP=1" (enabled by default; default)
 #  or: qmake "USE_UPNP=0" (disabled by default)
 #  or: qmake "USE_UPNP=-" (not supported)
 # miniupnpc (http://miniupnp.free.fr/files/) must be installed for support
-USE_UPNP=1
 contains(USE_UPNP, -) {
     message(Building without UPNP support)
 } else {
@@ -169,7 +166,7 @@ NO_LEVELDB=1
             QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
         }
         LIBS += -lshlwapi
-        genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+        # genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
     }
     genleveldb.target = $$PWD/src/leveldb/libleveldb.a
     genleveldb.depends = FORCE
@@ -490,8 +487,8 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/droidz.icns
-macx:TARGET = "droidz-Qt"
+macx:ICON = src/qt/res/icons/droidx.icns
+macx:TARGET = "droidx-Qt"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

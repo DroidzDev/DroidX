@@ -19,10 +19,7 @@
      <item>
       <widget class="QFrame" name="frame">
        <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
@@ -31,19 +28,22 @@
            <widget class="QLabel" name="label_5">
             <property name="font">
              <font>
-              <weight>50</weight>
-              <bold>false</bold>
+              <weight>75</weight>
+              <bold>true</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
-             <string>Wallet</string>
+             <string>WALLET</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="labelWalletStatus">
             <property name="toolTip">
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the droidz network after a connection is established, but this process has not completed yet.</string>
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the DroidX network after a connection is established, but this process has not completed yet.</string>
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel { color: red; }</string>
@@ -84,6 +84,9 @@
           </property>
           <item row="0" column="0">
            <widget class="QLabel" name="label">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
              <string>Spendable:</string>
             </property>
@@ -97,6 +100,9 @@
               <bold>false</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -104,7 +110,7 @@
              <string>Your current spendable balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 DRZ</string>
+             <string notr="true">0 DRX</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -113,6 +119,9 @@
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_6">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
              <string>Stake:</string>
             </property>
@@ -126,6 +135,9 @@
               <bold>false</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -133,7 +145,7 @@
              <string>Total of coins that was staked, and do not yet count toward the current balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 DRZ</string>
+             <string notr="true">0 DRX</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -142,6 +154,9 @@
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_3">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
              <string>Unconfirmed:</string>
             </property>
@@ -155,6 +170,9 @@
               <bold>false</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -162,7 +180,7 @@
              <string>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 DRZ</string>
+             <string notr="true">0 DRX</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -171,6 +189,9 @@
           </item>
           <item row="3" column="0">
            <widget class="QLabel" name="labelImmatureText">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
              <string>Immature:</string>
             </property>
@@ -184,26 +205,25 @@
               <bold>false</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="toolTip">
              <string>Mined balance that has not yet matured</string>
             </property>
             <property name="text">
-             <string notr="true">0 DRZ</string>
+             <string notr="true">0 DRX</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
             </property>
            </widget>
           </item>
-          <item row="4" column="0" colspan="2">
-           <widget class="Line" name="line">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
           <item row="5" column="0">
            <widget class="QLabel" name="labelTotalText">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
              <string>Total:</string>
             </property>
@@ -217,6 +237,9 @@
               <bold>false</bold>
              </font>
             </property>
+			<property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="cursor">
              <cursorShape>IBeamCursor</cursorShape>
             </property>
@@ -224,7 +247,7 @@
              <string>Your current total balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 DRZ</string>
+             <string notr="true">0 DRX</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -282,25 +305,25 @@
      <item>
       <widget class="QFrame" name="frame_2">
        <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+        <enum>QFrame::NoFrame</enum>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QLabel" name="label_4">
+		   <property name="styleSheet">
+             <string notr="true">QLabel { color: white; }</string>
+            </property>
             <property name="text">
-             <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
+             <string>&lt;b&gt;RECENT TRANSACTIONS&lt;/b&gt;</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="labelTransactionsStatus">
             <property name="toolTip">
-             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the droidz network after a connection is established, but this process has not completed yet.</string>
+             <string>The displayed information may be out of date. Your wallet automatically synchronizes with the DroidX network after a connection is established, but this process has not completed yet.</string>
             </property>
             <property name="styleSheet">
              <string notr="true">QLabel { color: red; }</string>

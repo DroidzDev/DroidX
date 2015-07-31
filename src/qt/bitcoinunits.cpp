@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DRZ");
-    case mBTC: return QString("mDRZ");
-    case uBTC: return QString::fromUtf8("μDRZ");
+    case BTC: return QString("DRX");
+    case mBTC: return QString("mDRX");
+    case uBTC: return QString::fromUtf8("μDRX");
     default: return QString("???");
     }
 }
