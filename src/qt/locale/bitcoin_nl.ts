@@ -1160,7 +1160,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start DroidX on system login</source>
+        <source>&amp;Start DROIDZ on system login</source>
         <translation>&amp;Start droidz bij systeem aanmelding</translation>
     </message>
     <message>
@@ -1681,8 +1681,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 DRX</source>
-        <translation>123.456 DRX</translation>
+        <source>0.00 DRZ</source>
+        <translation>123.456 DRZ</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1751,8 +1751,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 DRX</source>
-        <translation>123.456 DRX</translation>
+        <source>123.456 DRZ</source>
+        <translation>123.456 DRZ</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1766,8 +1766,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Voeg een droidz adres in (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Voeg een droidz adres in (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1910,8 +1910,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Het adres om naar te betalen (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Het adres om naar te betalen (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1940,8 +1940,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Voeg een droidz adres in (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Voeg een droidz adres in (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
 </context>
 <context>
@@ -1964,8 +1964,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Het adres om het bericht te ondertekenen (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM) </translation>
+        <source>The address to sign the message with (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Het adres om het bericht te ondertekenen (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM) </translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2028,8 +2028,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Het adres van het bericht is ondertekend met (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Het adres van het bericht is ondertekend met (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2044,8 +2044,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Voeg een droidz adres in (bijv. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>Voeg een droidz adres in (bijv. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="-2"/>

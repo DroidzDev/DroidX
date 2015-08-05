@@ -1159,7 +1159,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start DroidX on system login</source>
+        <source>&amp;Start DROIDZ on system login</source>
         <translation>システムログイン次第、ブラックコインをスタート</translation>
     </message>
     <message>
@@ -1680,8 +1680,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 DRX</source>
-        <translation>123.456 DRX {0.00 ?}</translation>
+        <source>0.00 DRZ</source>
+        <translation>123.456 DRZ {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1750,8 +1750,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 DRX</source>
-        <translation>123.456 DRX</translation>
+        <source>123.456 DRZ</source>
+        <translation>123.456 DRZ</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1765,8 +1765,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>ブラックコインアドレスの入力 (例；DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>ブラックコインアドレスの入力 (例；DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1909,8 +1909,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>支払いへ送るアドレス (例：DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>支払いへ送るアドレス (例：DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1939,8 +1939,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>ブラックコインアドレスの入力 (例；DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>ブラックコインアドレスの入力 (例；DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
 </context>
 <context>
@@ -1963,8 +1963,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>メッセージの署名するアドレス(例：DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to sign the message with (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>メッセージの署名するアドレス(例：DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2027,8 +2027,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>メッセージの署名するアドレス(例：DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>メッセージの署名するアドレス(例：DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2043,8 +2043,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a droidz address (e.g. DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>ブラックコインのアドレスを入力(例：DRX1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a droidz address (e.g. DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
+        <translation>ブラックコインのアドレスを入力(例：DRZ1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
     </message>
     <message>
         <location line="-2"/>

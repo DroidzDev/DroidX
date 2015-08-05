@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About DroidX</string>
+   <string>About DROIDZ</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -50,7 +50,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;DroidX&lt;/b&gt; version</string>
+          <string>&lt;b&gt;DROIDZ&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -92,7 +92,7 @@
        </property>
        <property name="text">
         <string>Copyright © 2015 The droidz developers
-Copyright © 2015 The DroidX developers</string>
+Copyright © 2015 The DROIDZ developers</string>
        </property>
 	   <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

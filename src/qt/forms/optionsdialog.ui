@@ -128,7 +128,7 @@
           <string>Automatically start droidz after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start DroidX on system login</string>
+          <string>&amp;Start DROIDZ on system login</string>
          </property>
         </widget>
        </item>
