@@ -2,7 +2,7 @@
 # QuBit (in order: luffa, cubehash, shavite, simd, echo)
 
 TEMPLATE = app
-TARGET = droidx-qt
+TARGET = droidz-qt
 VERSION = 2.0.0.0
 INCLUDEPATH += src src/json \
     src/qt 
