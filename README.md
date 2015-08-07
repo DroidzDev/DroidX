@@ -1,7 +1,7 @@
-Name: DroidX (Takeover of DROIDZ, launched April 14, 2015)
+Name: DROIDZ (Takeover of abandoned coin)
 
-Ticker: DRX
+Ticker: DRZ
 
-Supply: ~5.000.000 at block 32000
+Supply: ~5.080.000 at block 90000
 
 PoS: 5%
