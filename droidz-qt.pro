@@ -3,7 +3,7 @@
 
 TEMPLATE = app
 TARGET = droidz-qt
-VERSION = 2.0.0.0
+VERSION = 2.1.1.2
 INCLUDEPATH += src src/json \
     src/qt 
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -23,28 +23,28 @@ win32 {
     LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)
     LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX -lcrypt32
     LIBS += -lws2_32 -lole32 -loleaut32 -luuid -lgdi32
-    LIBS += -lboost_system-mgw49-mt-s-1_55 -lboost_filesystem-mgw49-mt-s-1_55 -lboost_program_options-mgw49-mt-s-1_55 -lboost_thread-mgw49-mt-s-1_55
-    LIBS += -L"C:/deps/MinGW/msys/1.0/local/lib"
+    LIBS += -lboost_system-mgw48-mt-s-1_53 -lboost_filesystem-mgw48-mt-s-1_53 -lboost_program_options-mgw48-mt-s-1_53 -lboost_thread-mgw48-mt-s-1_53
+    LIBS += -L"C:/MinGW/msys/1.0/local/lib"
     LIBS += -L"C:/deps/libcommuni-3.2.0/lib"
 
-    INCLUDEPATH += "C:/deps/MinGW/msys/1.0/local/include"
+    INCLUDEPATH += "C:/MinGW/msys/1.0/local/include"
     INCLUDEPATH += "C:/deps/libcommuni-3.2.0/include/IrcCore"
     INCLUDEPATH += "C:/deps/libcommuni-3.2.0/include/IrcModel"
     INCLUDEPATH += "C:/deps/libcommuni-3.2.0/include/IrcUtil"
 
-    BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
-    BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
-    BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
-    BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
-    BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1j/include
-    OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1j
-    MINIUPNPC_INCLUDE_PATH=C:/deps
-    LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.16
-    LIBPNG_LIB_PATH=C:/deps/libpng-1.6.16/.libs
-    MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-    QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
-    QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+BOOST_LIB_SUFFIX=-mgw48-mt-s-1_53
+BOOST_INCLUDE_PATH=C:/deps/boost_1_53_0
+BOOST_LIB_PATH=C:/deps/boost_1_53_0/stage/lib
+BDB_INCLUDE_PATH=C:/deps/db-6.0.20.NC/build_unix
+BDB_LIB_PATH=C:/deps/db-6.0.20.NC/build_unix
+OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1g/include
+OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1g
+MINIUPNPC_INCLUDE_PATH=C:/deps
+LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.10
+LIBPNG_LIB_PATH=C:/deps/libpng-1.6.10/.libs
+MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
+QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
 }
 
 # for boost 1.37, add -mt to the boost libraries
@@ -503,7 +503,6 @@ LIBS += -lboost_system$$BOOST_LIB_SUFFIX \
     -lboost_filesystem$$BOOST_LIB_SUFFIX \
     -lboost_program_options$$BOOST_LIB_SUFFIX \
     -lboost_thread$$BOOST_THREAD_LIB_SUFFIX \
-    -lboost_date_time$$BOOST_THREAD_LIB_SUFFIX \
     -lboost_chrono$$BOOST_LIB_SUFFIX
 
 contains(RELEASE, 1) {

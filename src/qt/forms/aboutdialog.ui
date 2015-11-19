@@ -63,7 +63,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">0.3.666-beta</string>
+          <string notr="true">2.1.1.2-Assembly</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -92,7 +92,8 @@
        </property>
        <property name="text">
         <string>Copyright © 2015 The droidz developers
-Copyright © 2015 The DROIDZ developers</string>
+Copyright © 2015 The DROIDZ developers
+Copyright © 2015 The DROIDZDEV Developers</string>
        </property>
 	   <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
